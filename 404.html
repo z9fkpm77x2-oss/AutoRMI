@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-ZA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- [CHANGED] Title was just "Car Parts". Now unique per page, with keywords + brand + location (SEO: title tags). -->
+    <title>Page not found | AutoRMI</title>
+    <!-- [ADDED] SEO meta tags: description, keywords, author, robots, canonical URL (rubric: Meta Description / Meta Keywords). -->
+    <meta name="description" content="Sorry, that page could not be found. Return to the AutoRMI home page or browse our car parts.">
+    <meta name="keywords" content="AutoRMI">
+    <meta name="author" content="AutoRMI">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#f91f05">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://YOUR-DEPLOYED-SITE.netlify.app/404.html">
+    <link rel="icon" type="image/jpeg" href="images/autormi-logo.jpg">
+
+    <!-- [ADDED] Open Graph + Twitter tags: control how the page looks when shared on social media (off-page SEO). -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AutoRMI">
+    <meta property="og:title" content="Page not found | AutoRMI">
+    <meta property="og:description" content="Sorry, that page could not be found. Return to the AutoRMI home page or browse our car parts.">
+    <meta property="og:url" content="https://YOUR-DEPLOYED-SITE.netlify.app/404.html">
+    <meta property="og:image" content="https://YOUR-DEPLOYED-SITE.netlify.app/images/auto-spare-parts-workshop-pretoria.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- [ADDED] Page speed: open connections to font/CDN hosts early.
+         [CHANGED] Fonts are now loaded here with <link> instead of a slow @import inside style.css. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <!-- [CHANGED] Libraries now use https:// links (were protocol-relative //) and have integrity="" hashes (security: SRI).
+         The hash makes the browser refuse the file if the CDN copy is ever tampered with. -->
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Your own stylesheet: original styles + [ADDED] Part 3 styles at the bottom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- [ADDED] "Skip to main content" link: first Tab press lets keyboard/screen-reader users jump past the menu (accessibility). -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- [CHANGED] Header: menu links were all href="#" and listed pages that did not exist ("sell your car", "our blogs").
+         Now: Home, About Us, Find Car Parts, Gallery, Enquiry, Contact Us - each a real page.
+         The current page gets class "active" + aria-current (highlighted in the menu).
+         Logo now links home and has real alt text (SEO: image alt). Phone is now a tel: link. -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/autormi-logo.jpg" alt="AutoRMI logo - RMI approved auto spare parts workshop" width="140" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Find Car Parts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="enquiry.html">Enquiry</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="header-cont">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <a href="tel:+27722978337" aria-label="Call us on 072 297 8337">0722978337</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Page not found</h1>
+            <p class="page-hero-lead">Sorry, we could not find that page.</p>
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">404</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <main id="main">
+    <section class="py-5 text-center">
+        <div class="container">
+            <p>The page you are looking for may have moved. Try one of these links:</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <div class="nav-btn"><a href="index.html">Home</a></div>
+                <div class="nav-btn"><a href="products.html">Find car parts</a></div>
+                <div class="nav-btn"><a href="contact.html">Contact us</a></div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- [CHANGED] Footer:
+         - lorem ipsum replaced with real text            - dead links (href="") now go to real pages / filtered parts
+         - "Weat" typo fixed -> "West"                    - phone/email are now tel:/mailto: links
+         - copyright "2019" -> current year (auto-updated by script.js)
+         - headings h4 -> h2 (correct heading order for SEO) - <li> directly in <div> fixed with a proper <ul>
+         - social links now open in a new tab with rel="noopener noreferrer" (security) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-img">
+                        <img src="images/autormi-logo.jpg" alt="AutoRMI logo" width="135" height="58" loading="lazy">
+                        <p class="mt-2">AutoRMI is an RMI approved workshop in Pretoria West supplying quality auto spare parts and specialising in engine overhauls.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links ps-md-5">
+                        <h2 class="f-title">Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Find Car Parts</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="enquiry.html">Parts Enquiry</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links ps-md-5">
+                        <h2 class="f-title">Services</h2>
+                        <ul>
+                            <li><a href="products.html?category=mechanical">Mechanical Parts</a></li>
+                            <li><a href="products.html?category=electrical">Electrical Parts</a></li>
+                            <li><a href="products.html?category=panel">Panel Parts</a></li>
+                            <li><a href="products.html?category=glass">Glass Parts</a></li>
+                            <li><a href="products.html?category=trim">Trim Parts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="f-title">Contact Us</h2>
+                    <ul class="footer-box">
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+27722978337">0722978337</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:RmiAtutoservice@gmail.com">RmiAtutoservice@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <a href="contact.html#map-section">241 Lutting Street, Pretoria West.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrights">
+                <span>&copy; <span id="year">2026</span> AutoRMI - RMI Approved Workshop. All rights reserved.</span>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- [ADDED] Back-to-top button (shown by script.js after scrolling down) -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+    <!-- [CHANGED] Scripts: jQuery now from jsDelivr with integrity hash (was Google CDN).
+         [ADDED] script.js (was linked in Part 2 but the file did not exist) + page-specific files in js/ -->
+    <!-- Scripts (Bootstrap bundle, jQuery, then our own files) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
