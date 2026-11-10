@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en-ZA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- [CHANGED] Title was just "Car Parts". Now unique per page, with keywords + brand + location (SEO: title tags). -->
+    <title>About Us | AutoRMI RMI Approved Workshop, Pretoria West</title>
+    <!-- [ADDED] SEO meta tags: description, keywords, author, robots, canonical URL (rubric: Meta Description / Meta Keywords). -->
+    <meta name="description" content="Learn about AutoRMI, an RMI approved workshop in Pretoria West: who we are, what we do, why customers trust us, and answers to common questions about parts, quotes and payment.">
+    <meta name="keywords" content="about AutoRMI, RMI approved workshop Pretoria, engine overhaul specialists, auto spare parts Pretoria West, car repair, car parts FAQ">
+    <meta name="author" content="AutoRMI">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f91f05">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://YOUR-DEPLOYED-SITE.netlify.app/about.html">
+    <link rel="icon" type="image/jpeg" href="images/autormi-logo.jpg">
+
+    <!-- [ADDED] Open Graph + Twitter tags: control how the page looks when shared on social media (off-page SEO). -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AutoRMI">
+    <meta property="og:title" content="About Us | AutoRMI RMI Approved Workshop, Pretoria West">
+    <meta property="og:description" content="Learn about AutoRMI, an RMI approved workshop in Pretoria West: who we are, what we do, why customers trust us, and answers to common questions about parts, quotes and payment.">
+    <meta property="og:url" content="https://YOUR-DEPLOYED-SITE.netlify.app/about.html">
+    <meta property="og:image" content="https://YOUR-DEPLOYED-SITE.netlify.app/images/engine-overhaul-workshop.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- [ADDED] Page speed: open connections to font/CDN hosts early.
+         [CHANGED] Fonts are now loaded here with <link> instead of a slow @import inside style.css. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <!-- [CHANGED] Libraries now use https:// links (were protocol-relative //) and have integrity="" hashes (security: SRI).
+         The hash makes the browser refuse the file if the CDN copy is ever tampered with. -->
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Your own stylesheet: original styles + [ADDED] Part 3 styles at the bottom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- [ADDED] "Skip to main content" link: first Tab press lets keyboard/screen-reader users jump past the menu (accessibility). -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- [CHANGED] Header: menu links were all href="#" and listed pages that did not exist ("sell your car", "our blogs").
+         Now: Home, About Us, Find Car Parts, Gallery, Enquiry, Contact Us - each a real page.
+         The current page gets class "active" + aria-current (highlighted in the menu).
+         Logo now links home and has real alt text (SEO: image alt). Phone is now a tel: link. -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/autormi-logo.jpg" alt="AutoRMI logo - RMI approved auto spare parts workshop" width="140" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Find Car Parts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="enquiry.html">Enquiry</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="header-cont">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <a href="tel:+27722978337" aria-label="Call us on 072 297 8337">0722978337</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>About AutoRMI</h1>
+            <p class="page-hero-lead">An RMI approved workshop in Pretoria West that cares about your car.</p>
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- [ADDED] NEW PAGE (Part 3): about.html - tabs + FAQ accordion (rubric: Interactive Elements). -->
+    <main id="main">
+    <section class="py-5" aria-labelledby="tabs-title">
+        <div class="container">
+            <h2 class="title mb-4 text-center" id="tabs-title">Get to know us</h2>
+
+            <!-- Interactive element 1: Bootstrap tabs -->
+            <ul class="nav nav-tabs custom-tabs" id="aboutTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="who-tab" data-bs-toggle="tab" data-bs-target="#who" type="button" role="tab" aria-controls="who" aria-selected="true">Who we are</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="what-tab" data-bs-toggle="tab" data-bs-target="#what" type="button" role="tab" aria-controls="what" aria-selected="false">What we do</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false">Why choose us</button>
+                </li>
+            </ul>
+            <div class="tab-content custom-tab-content">
+                <div class="tab-pane fade show active" id="who" role="tabpanel" aria-labelledby="who-tab" tabindex="0">
+                    <h3>An RMI approved workshop you can trust</h3>
+                    <p>AutoRMI is a workshop and spare parts supplier based at 241 Lutting Street, Pretoria West. We are RMI approved, which means we work to the standards of the Retail Motor Industry organisation.</p>
+                    <p>We make sure our clients leave happy, with a car that feels brand new. Our staff never disappoint, so you can always trust them with your car.</p>
+                </div>
+                <div class="tab-pane fade" id="what" role="tabpanel" aria-labelledby="what-tab" tabindex="0">
+                    <h3>Parts, repairs and engine overhauls</h3>
+                    <ul class="tick-list">
+                        <li>We supply mechanical, electrical, panel, glass and trim parts.</li>
+                        <li>We specialise in engine overhauls and repair engines on all makes and models.</li>
+                        <li>We offer repaint and panel work, and can source the parts you need.</li>
+                    </ul>
+                    <p><a class="text-link" href="products.html">Browse our parts</a> or <a class="text-link" href="enquiry.html">send us an enquiry</a>.</p>
+                </div>
+                <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab" tabindex="0">
+                    <h3>Simple, honest service</h3>
+                    <ul class="tick-list">
+                        <li>Free and instant quotes.</li>
+                        <li>Same day pickup, with delivery available.</li>
+                        <li>Paid on the spot: online payment or cash.</li>
+                        <li>Quality, affordable parts to keep your car running for a long time.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 faq-sec" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+            <h2 class="title mb-4 text-center" id="faq-title">Frequently Asked Questions</h2>
+
+            <!-- [ADDED] Interactive element 2: Bootstrap accordion (data-bs-parent = only one answer open at a time)(bro code,2021a) -->
+            <div class="accordion custom-accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-h0">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c0" aria-expanded="true" aria-controls="faq-c0">How do I get a quote?</button>
+                    </h3>
+                    <div id="faq-c0" class="accordion-collapse collapse show" aria-labelledby="faq-h0" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Use our <a class="text-link" href="enquiry.html">enquiry form</a>: choose the part, tell us your vehicle make, model and year, and you will see the price and availability straight away. You can also call us on <a class="text-link" href="tel:+27722978337">0722978337</a>.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-h1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c1" aria-expanded="false" aria-controls="faq-c1">Do you deliver parts?</button>
+                    </h3>
+                    <div id="faq-c1" class="accordion-collapse collapse" aria-labelledby="faq-h1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes. We offer same day pickup, and our autoshop can deliver parts to you. Choose delivery on the enquiry form and we will confirm the details.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-h2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c2" aria-expanded="false" aria-controls="faq-c2">How can I pay?</button>
+                    </h3>
+                    <div id="faq-c2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">You are paid on the spot: pay online or pay cash when you collect your parts or your car.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-h3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">Which vehicles do you work on?</button>
+                    </h3>
+                    <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">We repair engines on all makes and models. For parts, tell us your make, model and year so we can confirm the correct fit before you buy.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-h4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">What does RMI approved mean?</button>
+                    </h3>
+                    <div id="faq-c4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">The RMI is the Retail Motor Industry organisation of South Africa. An RMI approved workshop works to the standards set by that body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-h5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">I do not know the part name. Can you still help?</button>
+                    </h3>
+                    <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Absolutely. Describe the problem or the part in the notes box on the <a class="text-link" href="enquiry.html">enquiry form</a>, or send us a message on the <a class="text-link" href="contact.html">contact page</a>, and our team will help you identify it.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- [CHANGED] Footer:
+         - lorem ipsum replaced with real text            - dead links (href="") now go to real pages / filtered parts
+         - "Weat" typo fixed -> "West"                    - phone/email are now tel:/mailto: links
+         - copyright "2019" -> current year (auto-updated by script.js)
+         - headings h4 -> h2 (correct heading order for SEO) - <li> directly in <div> fixed with a proper <ul>
+         - social links now open in a new tab with rel="noopener noreferrer" (security) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-img">
+                        <img src="images/autormi-logo.jpg" alt="AutoRMI logo" width="135" height="58" loading="lazy">
+                        <p class="mt-2">AutoRMI is an RMI approved workshop in Pretoria West supplying quality auto spare parts and specialising in engine overhauls.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links ps-md-5">
+                        <h2 class="f-title">Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Find Car Parts</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="enquiry.html">Parts Enquiry</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links ps-md-5">
+                        <h2 class="f-title">Services</h2>
+                        <ul>
+                            <li><a href="products.html?category=mechanical">Mechanical Parts</a></li>
+                            <li><a href="products.html?category=electrical">Electrical Parts</a></li>
+                            <li><a href="products.html?category=panel">Panel Parts</a></li>
+                            <li><a href="products.html?category=glass">Glass Parts</a></li>
+                            <li><a href="products.html?category=trim">Trim Parts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="f-title">Contact Us</h2>
+                    <ul class="footer-box">
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+27722978337">0722978337</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:RmiAtutoservice@gmail.com">RmiAtutoservice@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <a href="contact.html#map-section">241 Lutting Street, Pretoria West.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrights">
+                <span>&copy; <span id="year">2026</span> AutoRMI - RMI Approved Workshop. All rights reserved.</span>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- [ADDED] Back-to-top button (shown by script.js after scrolling down) -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+    <!-- [CHANGED] Scripts: jQuery now from jsDelivr with integrity hash (was Google CDN).
+         [ADDED] script.js (was linked in Part 2 but the file did not exist) + page-specific files in js/ -->
+    <!-- Scripts (Bootstrap bundle, jQuery, then our own files)(bro code,2021a) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

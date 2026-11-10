@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en-ZA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- [CHANGED] Title was just "Car Parts". Now unique per page, with keywords + brand + location (SEO: title tags). -->
+    <title>Contact Us | AutoRMI, 241 Lutting Street, Pretoria West</title>
+    <!-- [ADDED] SEO meta tags: description, keywords, author, robots, canonical URL (rubric: Meta Description / Meta Keywords). -->
+    <meta name="description" content="Contact AutoRMI in Pretoria West. Send us a message, call 0722978337, or use the interactive map to find the workshop at 241 Lutting Street.">
+    <meta name="keywords" content="contact AutoRMI, auto spare parts Pretoria West, workshop location, send message, directions Pretoria West, 241 Lutting Street">
+    <meta name="author" content="AutoRMI">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f91f05">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://YOUR-DEPLOYED-SITE.netlify.app/contact.html">
+    <link rel="icon" type="image/jpeg" href="images/autormi-logo.jpg">
+
+    <!-- [ADDED] Open Graph + Twitter tags: control how the page looks when shared on social media (off-page SEO). -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AutoRMI">
+    <meta property="og:title" content="Contact Us | AutoRMI, 241 Lutting Street, Pretoria West">
+    <meta property="og:description" content="Contact AutoRMI in Pretoria West. Send us a message, call 0722978337, or use the interactive map to find the workshop at 241 Lutting Street.">
+    <meta property="og:url" content="https://YOUR-DEPLOYED-SITE.netlify.app/contact.html">
+    <meta property="og:image" content="https://YOUR-DEPLOYED-SITE.netlify.app/images/auto-spare-parts-workshop-pretoria.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- [ADDED] Page speed: open connections to font/CDN hosts early.
+         [CHANGED] Fonts are now loaded here with <link> instead of a slow @import inside style.css. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <!-- [CHANGED] Libraries now use https:// links (were protocol-relative //) and have integrity="" hashes (security: SRI).
+         The hash makes the browser refuse the file if the CDN copy is ever tampered with. -->
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Leaflet map library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+    <!-- Your own stylesheet: original styles + [ADDED] Part 3 styles at the bottom -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Structured data: helps Google show the business in local search -->
+    <!-- [ADDED] Local-business details in a format Google understands (rich results / local SEO). -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "AutoRMI",
+      "description": "RMI approved workshop in Pretoria West supplying auto spare parts and specialising in engine overhauls on all makes and models.",
+      "url": "https://YOUR-DEPLOYED-SITE.netlify.app/",
+      "image": "https://YOUR-DEPLOYED-SITE.netlify.app/images/auto-spare-parts-workshop-pretoria.jpg",
+      "logo": "https://YOUR-DEPLOYED-SITE.netlify.app/images/autormi-logo.jpg",
+      "telephone": "+27722978337",
+      "email": "RmiAtutoservice@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "241 Lutting Street",
+        "addressLocality": "Pretoria West",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -25.756, "longitude": 28.156 },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- [ADDED] "Skip to main content" link: first Tab press lets keyboard/screen-reader users jump past the menu (accessibility). -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- [CHANGED] Header: menu links were all href="#" and listed pages that did not exist ("sell your car", "our blogs").
+         Now: Home, About Us, Find Car Parts, Gallery, Enquiry, Contact Us - each a real page.
+         The current page gets class "active" + aria-current (highlighted in the menu).
+         Logo now links home and has real alt text (SEO: image alt). Phone is now a tel: link.(bro code,2021a) -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/autormi-logo.jpg" alt="AutoRMI logo - RMI approved auto spare parts workshop" width="140" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Find Car Parts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="enquiry.html">Enquiry</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="header-cont">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <a href="tel:+27722978337" aria-label="Call us on 072 297 8337">0722978337</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="page-hero-lead">Send us a message, call us or come and visit the workshop.</p>
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- [ADDED] NEW PAGE (Part 3): contact.html. Purpose: send a general message -> compiled into an email to the recipient.
+         Rubric: Contact Controls / Contact Validation / Contact Process Email. -->
+    <main id="main">
+    <section class="py-5" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="row gx-lg-5 gy-4">
+                <div class="col-lg-7">
+                    <h2 class="title mb-3" id="contact-title">Send us a message</h2>
+                    <p>Complete the form and we will prepare an email to <strong>RmiAtutoservice@gmail.com</strong> for you to send. Fields marked <span class="req">*</span> are required.</p>
+
+                    <div id="contactAlert" class="alert alert-danger d-none" role="alert" tabindex="-1"></div>
+
+                    <form id="contactForm" class="site-form" action="mailto:RmiAtutoservice@gmail.com" method="post" enctype="text/plain" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="cName" class="form-label">Full name <span class="req">*</span></label>
+                                <input type="text" class="form-control" id="cName" name="name" required minlength="2" maxlength="60" autocomplete="name" placeholder="e.g. Thabo Mokoena">
+                                <div class="invalid-feedback" id="cName-err"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cEmail" class="form-label">Email address <span class="req">*</span></label>
+                                <input type="email" class="form-control" id="cEmail" name="email" required maxlength="100" autocomplete="email" placeholder="you@example.com">
+                                <div class="invalid-feedback" id="cEmail-err"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cPhone" class="form-label">Phone number <span class="req">*</span></label>
+                                <input type="tel" class="form-control" id="cPhone" name="phone" required pattern="(\+27|0)[1-9][0-9]{8}" maxlength="16" autocomplete="tel" placeholder="e.g. 072 297 8337" aria-describedby="cPhone-help">
+                                <div class="form-text" id="cPhone-help">South African number: 0722978337 or +27722978337.</div>
+                                <div class="invalid-feedback" id="cPhone-err"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cType" class="form-label">Type of message <span class="req">*</span></label>
+                                <select class="form-select" id="cType" name="type" required>
+                                    <option value="">Choose...</option>
+                                    <option>General question</option>
+                                    <option>Feedback or compliment</option>
+                                    <option>Complaint</option>
+                                    <option>Booking a workshop visit</option>
+                                    <option>Something else</option>
+                                </select>
+                                <div class="invalid-feedback" id="cType-err"></div>
+                            </div>
+                            <div class="col-12">
+                                <label for="cSubject" class="form-label">Subject <span class="req">*</span></label>
+                                <input type="text" class="form-control" id="cSubject" name="subject" required minlength="3" maxlength="100" placeholder="What is your message about?">
+                                <div class="invalid-feedback" id="cSubject-err"></div>
+                            </div>
+                            <div class="col-12">
+                                <label for="cMessage" class="form-label">Message <span class="req">*</span></label>
+                                <textarea class="form-control" id="cMessage" name="message" rows="6" required minlength="20" maxlength="1000" placeholder="Type your full message here (at least 20 characters)." aria-describedby="cMessage-count"></textarea>
+                                <div class="form-text" id="cMessage-count">0 / 1000 characters</div>
+                                <div class="invalid-feedback" id="cMessage-err"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cConsent" name="consent" required>
+                                    <label class="form-check-label" for="cConsent">I agree that AutoRMI may reply to me using the details above. <span class="req">*</span></label>
+                                </div>
+                                <div class="invalid-feedback" id="cConsent-err"></div>
+                            </div>
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="cWebsite">Leave this field empty</label>
+                                <input type="text" id="cWebsite" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <button type="submit" class="btn btn-brand" id="cSubmit"><span class="btn-label">Prepare my email</span></button>
+                            <button type="reset" class="btn btn-outline-dark" id="cReset">Clear form</button>
+                        </div>
+                    </form>
+
+                    <!-- [ADDED] Compiled email preview. js/contact.js fills To / Subject / Message and the Send email (mailto:) button. -->
+                    <div id="emailPreview" class="email-preview d-none" aria-live="polite" tabindex="-1">
+                        <h3 class="h5"><i class="fa-solid fa-envelope-circle-check" aria-hidden="true"></i> Your email is ready</h3>
+                        <p class="mb-2">Your email app should open with this message. If it did not, press <strong>Send email</strong>.</p>
+                        <dl class="email-fields">
+                            <dt>To</dt><dd id="pvTo"></dd>
+                            <dt>Subject</dt><dd id="pvSubject"></dd>
+                            <dt>Message</dt><dd><pre id="pvBody"></pre></dd>
+                        </dl>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a class="btn btn-brand" id="sendEmail" href="#">Send email</a>
+                            <button type="button" class="btn btn-outline-dark" id="editEmail">Edit message</button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="col-lg-5" aria-label="Contact details">
+                    <div class="side-card">
+                        <h2 class="h4">Contact details</h2>
+                        <ul class="footer-box contact-list">
+                            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+27722978337">0722978337</a></li>
+                            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:RmiAtutoservice@gmail.com">RmiAtutoservice@gmail.com</a></li>
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>241 Lutting Street, Pretoria West.</span></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Opening hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday to Friday</span><span>08:00 - 17:00</span></li>
+                            <li><span>Saturday</span><span>08:00 - 13:00</span></li>
+                            <li><span>Sunday &amp; public holidays</span><span>Closed</span></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- [ADDED] Interactive map (Leaflet + OpenStreetMap, js/map.js). Rubric: Interactive Maps. -->
+    <section class="pb-5" id="map-section" aria-labelledby="map-title">
+        <div class="container">
+            <h2 class="title mb-3" id="map-title">Find the workshop</h2>
+            <div class="map-tools d-flex flex-wrap gap-2 mb-3">
+                <a class="btn btn-brand" id="directionsLink" href="https://www.google.com/maps/dir/?api=1&amp;destination=-25.756,28.156" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get directions</a>
+                <button type="button" class="btn btn-outline-dark" id="locateMe"><i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i> How far am I?</button>
+                <span class="map-distance" id="mapDistance" role="status" aria-live="polite"></span>
+            </div>
+            <div id="map" class="map-box" role="region" aria-label="Interactive map showing the AutoRMI workshop in Pretoria West"></div>
+            <noscript><p class="alert alert-warning mt-3">The interactive map needs JavaScript. Find us at 241 Lutting Street, Pretoria West.</p></noscript>
+        </div>
+    </section>
+    </main>
+
+    <!-- [CHANGED] Footer:
+         - lorem ipsum replaced with real text            - dead links (href="") now go to real pages / filtered parts
+         - "Weat" typo fixed -> "West"                    - phone/email are now tel:/mailto: links
+         - copyright "2019" -> current year (auto-updated by script.js)
+         - headings h4 -> h2 (correct heading order for SEO) - <li> directly in <div> fixed with a proper <ul>
+         - social links now open in a new tab with rel="noopener noreferrer" (security) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-img">
+                        <img src="images/autormi-logo.jpg" alt="AutoRMI logo" width="135" height="58" loading="lazy">
+                        <p class="mt-2">AutoRMI is an RMI approved workshop in Pretoria West supplying quality auto spare parts and specialising in engine overhauls.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links ps-md-5">
+                        <h2 class="f-title">Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Find Car Parts</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="enquiry.html">Parts Enquiry</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links ps-md-5">
+                        <h2 class="f-title">Services</h2>
+                        <ul>
+                            <li><a href="products.html?category=mechanical">Mechanical Parts</a></li>
+                            <li><a href="products.html?category=electrical">Electrical Parts</a></li>
+                            <li><a href="products.html?category=panel">Panel Parts</a></li>
+                            <li><a href="products.html?category=glass">Glass Parts</a></li>
+                            <li><a href="products.html?category=trim">Trim Parts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="f-title">Contact Us</h2>
+                    <ul class="footer-box">
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+27722978337">0722978337</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:RmiAtutoservice@gmail.com">RmiAtutoservice@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <a href="contact.html#map-section">241 Lutting Street, Pretoria West.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrights">
+                <span>&copy; <span id="year">2026</span> AutoRMI - RMI Approved Workshop. All rights reserved.</span>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="AutoRMI on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- [ADDED] Back-to-top button (shown by script.js after scrolling down) -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+    <!-- [CHANGED] Scripts: jQuery now from jsDelivr with integrity hash (was Google CDN).
+         [ADDED] script.js (was linked in Part 2 but the file did not exist) + page-specific files in js/ -->
+    <!-- Scripts (Bootstrap bundle, jQuery, then our own files)(bro code,2021a) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/map.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
